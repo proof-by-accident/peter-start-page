@@ -1,25 +1,25 @@
 const defaultConfig = {
-	username: "Excalith",
+	username: "peter",
 	theme: {
 		backgroundColor: "#121317",
 		windowColor: "#1e212b",
-		glowColor: "#6b5cb157",
+		glowColor: "#DBBC7F",
 		white: "#e2e2e2",
 		gray: "#97989d",
-		black: "#16161e",
-		red: "#ec6183",
-		green: "#2ed8a2",
-		yellow: "#e8b195",
-		blue: "#2bc3de",
-		cyan: "#62e0e2",
-		magenta: "#e069aa",
-		violet: "#d1aff8",
-		orange: "#ff8800"
+		black: "#4B565C",
+		red: "#E67E80",
+		green: "#A7C080",
+		yellow: "#fcec7d",
+		blue: "#7FBBB3",
+		cyan: "#83C092",
+		magenta: "#D699B6",
+		violet: "#83C092",
+		orange: "#D3C6AA"
 	},
 	wallpaper: {
 		url: "",
 		easing: "ease-in-out",
-		fadeIn: true,
+		fadeIn: false,
 		blur: true
 	},
 	terminal: {
@@ -31,10 +31,10 @@ const defaultConfig = {
 		ctrlC: true,
 		placeholder: "command...",
 		placeholderColor: "gray",
-		userColor: "green",
+		userColor: "yellow",
 		atColor: "gray",
-		hostColor: "magenta",
-		promptColor: "magenta",
+		hostColor: "yellow",
+		promptColor: "yellow",
 		promptSymbol: "❯",
 		caretColor: "green",
 		selectionBg: "yellow",
@@ -59,7 +59,7 @@ const defaultConfig = {
 	urlLaunch: {
 		target: "_self",
 		defaultColor: "white",
-		hoverColor: "violet"
+		hoverColor: "yellow"
 	},
 	search: {
 		default: "https://google.com/search?q=",
@@ -75,11 +75,6 @@ const defaultConfig = {
 				alias: "d",
 				name: "DuckDuckGo Search",
 				url: "https://duckduckgo.com/?q={}"
-			},
-			{
-				alias: "b",
-				name: "Brave Search",
-				url: "https://search.brave.com/search?q={}"
 			},
 			{
 				alias: "gh",
@@ -100,6 +95,21 @@ const defaultConfig = {
 				alias: "w",
 				name: "Wikipedia Search",
 				url: "https://en.wikipedia.org/wiki/{}"
+			},
+			{
+				alias: "a",
+				name: "ArchWiki Search",
+				url: "https://wiki.archlinux.org/index.php?search={}"
+			},
+			{
+				alias: "aps",
+				name: "Arch Pack Search",
+				url: "https://archlinux.org/packages/?sort=&q="
+			},
+			{
+				alias: "aur",
+				name: "AUR Search",
+				url: "https://aur.archlinux.org/packages?K={}"
 			}
 		]
 	},
@@ -111,159 +121,88 @@ const defaultConfig = {
 				align: "left",
 				links: [
 					{
-						name: "Portfolio",
-						url: "https://cancellek.com",
+						name: "Blog",
+						url: "https://www.petershaffery.net",
 						icon: "mdi:web"
 					},
 					{
-						name: "Keybase",
-						url: "https://keybase.io/",
-						icon: "fa-brands:keybase"
+						name: "Email",
+						url: "https://mail.protonmail.com",
+						icon: "mdi:email-outline"
+					},
+					{
+						name: "Calendar",
+						url: "https://calendar.protonmail.com",
+						icon: "mdi:calendar"
+					},
+					{
+						name: "Lichess",
+						url: "https://lichess.org",
+						icon: "fa6-regular:chess-knight"
 					},
 					{
 						name: "GPT",
 						url: "https://chat.openai.com/",
 						icon: "simple-icons:openai"
-					},
-					{
-						name: "OCI",
-						url: "https://www.oracle.com/cloud/",
-						icon: "simple-icons:oracle"
 					}
 				]
 			},
 			{
-				title: "Dev",
-				color: "magenta",
-				align: "left",
-				links: [
-					{
-						name: "GitHub",
-						url: "https://github.com",
-						icon: "mdi:github"
-					},
-					{
-						name: "GitLab",
-						url: "https://gitlab.com",
-						icon: "ph:gitlab-logo-simple-fill"
-					},
-					{
-						name: "Dev.to",
-						url: "https://dev.to",
-						icon: "material-symbols:logo-dev"
-					},
-					{
-						name: "Stack Overflow",
-						url: "https://stackoverflow.com/",
-						icon: "mdi:stack-overflow"
-					}
-				]
-			},
-			{
-				title: "Social",
-				color: "violet",
-				align: "left",
-				links: [
-					{
-						name: "Twitter",
-						url: "https://twitter.com",
-						icon: "mdi:twitter"
-					},
-					{
-						name: "Mastodon",
-						url: "https://mastodon.social/",
-						icon: "ri:mastodon-fill"
-					},
-					{
-						name: "Reddit",
-						url: "https://reddit.com",
-						icon: "mdi:reddit"
-					},
-					{
-						name: "Polywork",
-						url: "https://polywork.com",
-						icon: "simple-icons:polywork"
-					}
-				]
-			},
-			{
-				title: "Gaming",
-				color: "cyan",
-				align: "left",
-				links: [
-					{
-						name: "Polygon",
-						url: "https://polygon.com",
-						icon: "uil:polygon"
-					},
-					{
-						name: "IGN",
-						url: "https://ign.com",
-						icon: "mdi:currency-sign"
-					},
-					{
-						name: "RPS",
-						url: "https://rockpapershotgun.com/",
-						icon: "ph:toilet-paper-bold"
-					},
-					{
-						name: "80lv",
-						url: "https://80.lv/",
-						icon: "tabler:hand-rock"
-					}
-				]
-			},
-			{
-				title: "Science",
+				title: "Music",
 				color: "blue",
 				align: "left",
 				links: [
 					{
-						name: "PopSci",
-						url: "https://popsci.com/",
-						icon: "material-symbols:science"
+						name: "Soundcloud",
+						url: "https://www.soundcloud.com",
+						icon: "mdi:soundcloud"
 					},
 					{
-						name: "Space",
-						url: "fa6-solid:user-astronaut",
-						icon: "mdi:reddit"
+						name: "Bandcamp",
+						url: "https://www.bandcamp.com",
+						icon: "simple-icons:bandcamp"
 					},
 					{
-						name: "NASA",
-						url: "https://blogs.nasa.gov/",
-						icon: "simple-icons:nasa"
+						name: "Spotify",
+						url: "https://www.spotify.com",
+						icon: "simple-icons:spotify"
 					},
 					{
-						name: "ESA",
-						url: "https://blogs.esa.int/",
-						icon: "mdi:black-mesa"
+						name: "Resident Advisor",
+						url: "https://ra.co",
+						icon: "fa6-solid:record-vinyl"
 					}
 				]
 			},
 			{
-				title: "Tech",
-				color: "yellow",
+				title: "News",
+				color: "red",
 				align: "left",
 				links: [
 					{
-						name: "TechCrunch",
-						url: "https://techcrunch.com/",
-						icon: "game-icons:techno-heart"
+						name: "Denverite",
+						url: "https://denverite.com",
+						icon: "mdi:twitter"
+					},
+					{
+						name: "Colorado Sun",
+						url: "https://coloradosun.com",
+						icon: "fa6-regular:sun"
+					},
+					{
+						name: "NYTimes",
+						url: "https://nytimes.com",
+						icon: "simple-icons:newyorktimes"
+					},
+					{
+						name: "HackerNews",
+						url: "news.ycombinator.com",
+						icon: "simple-icons:ycombinator"
 					},
 					{
 						name: "Verge",
 						url: "https://www.theverge.com/",
 						icon: "arcticons:verge"
-					},
-					{
-						name: "It's Foss",
-						url: "https://itsfoss.com/",
-						icon: "ri:mastodon-fill"
-					},
-					{
-						name: "9To5 Linux",
-						url: "https://9to5linux.com/",
-						icon: "uil:linux"
 					}
 				]
 			}
