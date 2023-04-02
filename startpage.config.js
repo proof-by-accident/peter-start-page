@@ -139,11 +139,6 @@ const defaultConfig = {
 						name: "Lichess",
 						url: "https://lichess.org",
 						icon: "fa6-regular:chess-knight"
-					},
-					{
-						name: "GPT",
-						url: "https://chat.openai.com/",
-						icon: "simple-icons:openai"
 					}
 				]
 			},
@@ -193,15 +188,71 @@ const defaultConfig = {
 						name: "NYTimes",
 						url: "https://nytimes.com",
 						icon: "simple-icons:newyorktimes"
+					}
+				]
+			},
+			{
+				title: "Home",
+				color: "green",
+				align: "left",
+				links: [
+					{
+						name: "Router",
+						url: "100.100.0.1",
+						icon: "fa6-regular:wifi"
 					},
+					{
+						name: "Bjork",
+						url: "100.100.0.204",
+						icon: "fa6-regular:speaker"
+					},
+					{
+						name: "Opti",
+						url: "100.100.0.2",
+						icon: "fa6-regular:brain-circuit"
+					}
+				]
+			},
+			{
+				title: "Apps",
+				color: "blue",
+				align: "left",
+				links: [
+					{
+						name: "YouTube",
+						url: "youtube.com",
+						icon: "simple-icons:youtube"
+					},
+					{
+						name: "Maps",
+						url: "maps.google.com",
+						icon: "simple-icons:googlemaps"
+					},
+					{
+						name: "ChatGPT",
+						url: "chat.openai.com",
+						icon: "simple-icons:openai"
+					}
+				]
+			},
+			{
+				title: "Tech",
+				color: "red",
+				align: "left",
+				links: [
 					{
 						name: "HackerNews",
 						url: "news.ycombinator.com",
 						icon: "simple-icons:ycombinator"
 					},
 					{
+						name: "ArsTechnica",
+						url: "arstechnica.com",
+						icon: "fa6-regular:circle"
+					},
+					{
 						name: "Verge",
-						url: "https://www.theverge.com/",
+						url: "theverge.com",
 						icon: "arcticons:verge"
 					}
 				]
