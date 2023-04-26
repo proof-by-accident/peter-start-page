@@ -198,17 +198,17 @@ const defaultConfig = {
 				links: [
 					{
 						name: "Router",
-						url: "100.100.0.1",
+						url: "http://100.100.0.1",
 						icon: "fa6-regular:wifi"
 					},
 					{
 						name: "Bjork",
-						url: "100.100.0.204",
+						url: "http://100.100.0.204",
 						icon: "fa6-regular:speaker"
 					},
 					{
 						name: "Opti",
-						url: "100.100.0.2",
+						url: "http://100.100.0.2",
 						icon: "fa6-regular:brain-circuit"
 					}
 				]
@@ -220,17 +220,17 @@ const defaultConfig = {
 				links: [
 					{
 						name: "YouTube",
-						url: "youtube.com",
+						url: "https://youtube.com",
 						icon: "simple-icons:youtube"
 					},
 					{
 						name: "Maps",
-						url: "maps.google.com",
+						url: "https://maps.google.com",
 						icon: "simple-icons:googlemaps"
 					},
 					{
 						name: "ChatGPT",
-						url: "chat.openai.com",
+						url: "https://chat.openai.com",
 						icon: "simple-icons:openai"
 					}
 				]
@@ -242,17 +242,17 @@ const defaultConfig = {
 				links: [
 					{
 						name: "HackerNews",
-						url: "news.ycombinator.com",
+						url: "https://news.ycombinator.com",
 						icon: "simple-icons:ycombinator"
 					},
 					{
 						name: "ArsTechnica",
-						url: "arstechnica.com",
+						url: "https://arstechnica.com",
 						icon: "fa6-regular:circle"
 					},
 					{
 						name: "Verge",
-						url: "theverge.com",
+						url: "https://theverge.com",
 						icon: "arcticons:verge"
 					}
 				]
